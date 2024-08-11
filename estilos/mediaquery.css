@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 992px) {
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+
+        grid-template-areas: 
+        'd d jo k'
+        'd d jo k'
+        'je p p k'
+        'je p p k'
+        ;
+    }
+
+    #box-1{
+
+        grid-area: d;
+    }
+
+    #box-2{
+        grid-area: jo;
+    }
+
+    #box-3{
+        grid-area: je;
+    }
+
+    #box-3 h3{
+        width: 220px;
+    }
+
+    #box-3 p{
+        width: 250px;
+    }
+
+    #box-4{
+        grid-area: p;
+    }
+
+    #box-5{
+        grid-area: k;
+    }
+}
